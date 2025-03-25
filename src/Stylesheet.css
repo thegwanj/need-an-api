@@ -1,0 +1,75 @@
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Adds space between cards */
+    justify-content: center; /* Centers the grid */
+    padding: 20px; /* Optional padding */
+}
+
+.likedList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between liked items */
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: antiquewhite;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 0 5px 0 5px;
+}
+
+.cardLinks {
+    display: flex;
+}
+
+.cardLinks * {
+    margin: auto;
+}
+
+.likeButton {
+    background-color: darkgray;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px
+}
+
+.likeButton:hover {
+    background-color: rgba(169, 169, 169, 0.7);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.fetchButton {
+    background-color: darkgray;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fetchButton:hover {
+    background-color: rgba(169, 169, 169, 0.7);
+}
+
+.searchById, .sortOptions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+input, select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
